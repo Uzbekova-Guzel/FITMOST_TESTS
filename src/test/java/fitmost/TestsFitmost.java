@@ -54,7 +54,7 @@ public class TestsFitmost extends TestBase {
     @ValueSource(
             strings = {"Студии", "Занятия", "Онлайн-курсы", "Сертификаты", "Корпоративным клиентам", "Еще"}
     )
-    @ParameterizedTest(name = "В залоговке главной страницы отображается раздел {0}")
+    @ParameterizedTest(name = "В заголовке главной страницы отображается раздел {0}")
     @Tag("web")
     @Owner("UzbekovaGV")
     void sectionsTest(
