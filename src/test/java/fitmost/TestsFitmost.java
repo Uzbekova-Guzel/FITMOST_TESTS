@@ -75,6 +75,8 @@ public class TestsFitmost extends TestBase {
     @CsvFileSource(resources = "/fitmostMorePages.csv")
     @ParameterizedTest(name = "При переходе в дополнительный раздел '{0}' отображается текст '{1}'")
     @Tag("web")
+    @Feature("FITMOST web site tests")
+    @Story("UI tests")
     @Owner("UzbekovaGV")
     void sectionsMoreTest(
             String section,
