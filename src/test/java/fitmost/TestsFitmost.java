@@ -1,6 +1,8 @@
 package fitmost;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,6 +18,8 @@ public class TestsFitmost extends TestBase {
     @DisplayName("Переход на главную страницу при клике на лого FITMOST")
     @Test
     @Tag("web")
+    @Feature("FITMOST web site tests")
+    @Story("UI tests")
     @Owner("UzbekovaGV")
     void goMainPageByLogoTest() {
         step("Открыть страницу 'https://www.fitmost.ru/'", () -> {
@@ -35,6 +39,8 @@ public class TestsFitmost extends TestBase {
     @DisplayName("Выбор локации доставки")
     @Test
     @Tag("web")
+    @Feature("FITMOST web site tests")
+    @Story("UI tests")
     @Owner("UzbekovaGV")
     void locationTest() {
         step("Открыть страницу 'https://www.fitmost.ru/'", () -> {
@@ -54,8 +60,10 @@ public class TestsFitmost extends TestBase {
     @ValueSource(
             strings = {"Студии", "Занятия", "Онлайн-курсы", "Сертификаты", "Корпоративным клиентам", "Еще"}
     )
-    @ParameterizedTest(name = "В заголовке главной страницы отображается раздел {0}")
+    @ParameterizedTest(name = "В заголовке главной страницы отображается раздел '{0}'")
     @Tag("web")
+    @Feature("FITMOST web site tests")
+    @Story("UI tests")
     @Owner("UzbekovaGV")
     void sectionsTest(
             String header
@@ -65,7 +73,7 @@ public class TestsFitmost extends TestBase {
     }
 
     @CsvFileSource(resources = "/fitmostMorePages.csv")
-    @ParameterizedTest(name = "При переходе в дополнительный раздел {0} отображается текст {1}")
+    @ParameterizedTest(name = "При переходе в дополнительный раздел '{0}' отображается текст '{1}'")
     @Tag("web")
     @Owner("UzbekovaGV")
     void sectionsMoreTest(
@@ -82,6 +90,8 @@ public class TestsFitmost extends TestBase {
     @DisplayName("Переход на страницу 'Выберите пакет баллов' при клике на 'Купить абонемент'")
     @Test
     @Tag("web")
+    @Feature("FITMOST web site tests")
+    @Story("UI tests")
     @Owner("UzbekovaGV")
     void goBuyPageTest() {
         step("Открыть страницу 'https://www.fitmost.ru/'", () -> {
