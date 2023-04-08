@@ -9,7 +9,7 @@
 * <a href="#allure">Отчеты в Allure</a>
 * <a href="#testops">Интеграция с Allure TestOps</a>
 * <a href="#testops">Интеграция с Jira</a>
-* <a href="#telegram">Уведомления в Telegram с использованием бота</a>
+* <a href="#telegram">Уведомления в Telegram и Slack с использованием бота</a>
 * <a href="#video">Пример прогона теста в Selenoid</a>
 
 <a id="tools"></a>
@@ -101,7 +101,7 @@ clean web_test
 </p>
 
 <a id="allure"></a>
-## Отчеты в <a target="_blank" href="https://jenkins.autotests.cloud/job/017_Guzel_Uz_web_fitmost_tests/2/allure"> Allure report </a>
+## Отчеты в <a target="_blank" href="https://jenkins.autotests.cloud/job/017_Guzel_Uz_web_fitmost_tests/12/allure/"> Allure report </a>
 
 ### Основное окно
 
