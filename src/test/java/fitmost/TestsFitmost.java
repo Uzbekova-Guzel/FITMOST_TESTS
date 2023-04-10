@@ -93,7 +93,7 @@ public class TestsFitmost extends TestBase {
         step("Нажать на 'Еще' в заголовке главной страницы", () -> {
             mainPage.openMoreSection();
         });
-        step("Перейти в дополнительный раздел'", () -> {
+        step("Перейти в дополнительный раздел", () -> {
             mainPage.selectSection(section);
         });
         step("Отображается текст дополнительного раздела", () -> {
