@@ -60,7 +60,7 @@ public class TestsFitmost extends TestBase {
     @ValueSource(
             strings = {"Студии", "Занятия", "Онлайн-курсы", "Сертификаты", "Корпоративным клиентам", "Еще"}
     )
-    @ParameterizedTest(name = "В заголовке главной страницы отображается раздел '{0}'")
+    @ParameterizedTest(name = "В заголовке главной страницы отображается раздел {0}")
     @Tag("web")
     @Feature("FITMOST web site tests")
     @Story("UI tests")
@@ -73,7 +73,7 @@ public class TestsFitmost extends TestBase {
     }
 
     @CsvFileSource(resources = "/fitmostMorePages.csv")
-    @ParameterizedTest(name = "При переходе в дополнительный раздел '{0}' отображается текст '{1}'")
+    @ParameterizedTest(name = "При переходе в дополнительный раздел {0} отображается текст {1}")
     @Tag("web")
     @Feature("FITMOST web site tests")
     @Story("UI tests")
