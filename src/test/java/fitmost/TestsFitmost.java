@@ -1,5 +1,6 @@
 package fitmost;
 
+import fitmost.pages.SertificatesPage;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
@@ -26,10 +27,10 @@ public class TestsFitmost extends TestBase {
             mainPage.openPageFitmost();
         });
         step("Перейти во вкладку 'Сертификаты'", () -> {
-            mainPage.certificatesPage();
+            sertificatesPage.MoveSertificatesPage();
         });
         step("Кликнуть на логотип FITMOST в левом верхнем углу", () -> {
-            mainPage.logoFitmost();
+            sertificatesPage.clickLogoFitmost();
         });
         step("Переход осуществился на главную страницу FITMOST", () -> {
             mainPage.verifyMainPage();
@@ -68,8 +69,12 @@ public class TestsFitmost extends TestBase {
     void sectionsTest(
             String header
     ) {
-        mainPage.openPageFitmost()
-                .checkHeadersItems(header);
+        step("Открыть страницу 'https://www.fitmost.ru/'", () -> {
+            mainPage.openPageFitmost();
+        });
+        step("Отображаются все разделы в заголовке главной страницы", () -> {
+            mainPage.checkHeadersItems(header);
+        });
     }
 
     @CsvFileSource(resources = "/fitmostMorePages.csv")
@@ -82,10 +87,18 @@ public class TestsFitmost extends TestBase {
             String section,
             String text
     ) {
-        mainPage.openPageFitmost()
-                .openMoreSection()
-                .selectSection(section)
-                .checkSectionText(text);
+        step("Открыть страницу 'https://www.fitmost.ru/'", () -> {
+            mainPage.openPageFitmost();
+    });
+        step("Нажать на 'Еще' в заголовке главной страницы", () -> {
+            mainPage.openMoreSection();
+        });
+        step("Перейти в дополнительный раздел'", () -> {
+            mainPage.selectSection(section);
+        });
+        step("Отображается текст дополнительного раздела", () -> {
+            additionalPage.checkSectionText(text);
+    });
 
     }
 
@@ -103,7 +116,7 @@ public class TestsFitmost extends TestBase {
             mainPage.clickBuyButton();
         });
         step("Переход осуществился на страницу покупки пакета баллов", () -> {
-            mainPage.checkBuyPageTitleText();
+            buyPage.checkBuyPageTitleText();
         });
     }
 }
