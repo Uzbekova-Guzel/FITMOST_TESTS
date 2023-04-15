@@ -1,4 +1,4 @@
-package fitmost.config;
+package ru.fitmost.config;
 
 import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;

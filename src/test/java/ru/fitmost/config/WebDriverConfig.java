@@ -1,4 +1,4 @@
-package fitmost.config;
+package ru.fitmost.config;
 
 import org.aeonbits.owner.Config;
 

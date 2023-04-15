@@ -1,12 +1,12 @@
-package fitmost;
+package ru.fitmost.tests.web;
 
-import fitmost.config.WebDriverProvider;
-import fitmost.pages.AdditionalPage;
-import fitmost.pages.BuyPage;
-import fitmost.pages.MainPage;
+import ru.fitmost.config.WebDriverProvider;
+import ru.fitmost.pages.AdditionalPage;
+import ru.fitmost.pages.BuyPage;
+import ru.fitmost.pages.MainPage;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import fitmost.pages.SertificatesPage;
-import helpers.Attach;
+import ru.fitmost.pages.SertificatesPage;
+import ru.fitmost.helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

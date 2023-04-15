@@ -1,6 +1,5 @@
-package fitmost;
+package ru.fitmost.tests.web;
 
-import fitmost.pages.SertificatesPage;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
