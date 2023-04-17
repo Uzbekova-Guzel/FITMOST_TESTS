@@ -1,4 +1,4 @@
-<h1 >Проект автоматизации UI для сайта <a href="www.fitmost.ru/ ">fitmost.ru</a></h1>
+<h1 >Проект автоматизации UI для сайта <a href="https://www.fitmost.ru/ ">fitmost.ru</a></h1>
 
 ## Содержание
 
@@ -147,7 +147,7 @@ clean web_test
 
 
 <a id="jira"></a>
-## Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-663"> Jira </a>
+## Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-665"> Jira </a>
 <p align="center">
 <img src="images/screenshots/Jira.PNG">
 </p>
